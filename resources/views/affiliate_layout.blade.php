@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-        <title>Plan To Travel</title>
+        <title>Giải Trí Việt</title>
         <meta property="og:type" content="website" />
         <meta property="og:image" content="images/logo-plan-to-travel.png" />
         <meta name="robots" content="noindex" />

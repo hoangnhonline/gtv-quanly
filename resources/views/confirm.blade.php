@@ -11,7 +11,7 @@
     <body>
         <div class="container">
             <p style="font-size: 15px;">Kính gửi <b>Quý khách,</b></p>
-            <p style="font-size: 15px;"><b>Plan To Travel</b> trân trọng cảm ơn quý khách đã tin tưởng và sử dụng dịch vụ đặt phòng của chúng tôi</p>
+            <p style="font-size: 15px;"><b>Giải Trí Việt</b> trân trọng cảm ơn quý khách đã tin tưởng và sử dụng dịch vụ đặt phòng của chúng tôi</p>
             <p style="font-size: 15px;"><b>Thông tin đặt phòng</b> của quý khách được thể hiện chi tiết như bên dưới:</p>
             <br />
             <table class="table table-bordered" width="700" style="color: #1f497d;">

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
-        <title>Hệ thống quản lý booking - Plan To Travel</title>
+        <title>Hệ thống quản lý booking - Giải Trí Việt</title>
         <meta property="og:type" content="website" />
         <meta property="og:image" content="images/logo-plan-to-travel.png" />
         <meta name="robots" content="noindex" />

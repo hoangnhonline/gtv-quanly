@@ -6,7 +6,7 @@
                 <div class="wed-logo">
                     <a href="https://plantotravel.vn"><img class="lazy"
                                                            data-original="https://plantotravel.vn/images/logo-plan-to-travel.png"
-                                                           alt="Logo Plan To Travel"/>
+                                                           alt="Logo Giải Trí Việt"/>
                     </a>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         <h1>
                             <a href="https://plantotravel.vn">
                                 <img src="https://plantotravel.vn/images/logo-plan-to-travel.png"
-                                     alt="Logo Plan To Travel"/>
+                                     alt="Logo Giải Trí Việt"/>
                             </a>
                         </h1>
                     </div>

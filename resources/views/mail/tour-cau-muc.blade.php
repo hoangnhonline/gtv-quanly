@@ -11,7 +11,7 @@
     <body>
         <div class="container">
             <p style="font-size: 15px;">Dear <b>quý đối tác,</b></p>
-            <p style="font-size: 15px;"><b>Plan To Travel</b> có yêu cầu đặt tour với thông tin cụ thể như sau:</p>
+            <p style="font-size: 15px;"><b>Giải Trí Việt</b> có yêu cầu đặt tour với thông tin cụ thể như sau:</p>
             <table class="table table-bordered" width="700" style="color: #1f497d;">
                 <tr>
                     <td colspan="3" style="text-align: center;">
