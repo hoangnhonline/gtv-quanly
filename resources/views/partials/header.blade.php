@@ -3,10 +3,10 @@
   <a href="{{ route('dashboard')}}" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini">
-      <img src="{{ asset('images/logo-small.jpg')}}" width="52">
+      <img src="{{ asset('images/logo-small.png')}}" width="52">
     </span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>PLAN TO TRAVEL</b></span>
+    <span class="logo-lg"><b>GIẢI TRÍ VIỆT</b></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   @if(!isset($codeUser))
@@ -32,24 +32,7 @@
               <i class="fa fa-usd"></i>
               <span style="font-weight: bold;">120,000,000
             </a>            
-          </li> -->
-          <li class="dropdown tasks-menu" style="background-color: #00a65a;">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" style="color: #FFF">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>&nbsp;{{ $cityName[$city_id_default] }}</span>
-            </a>
-
-            <ul class="dropdown-menu" style="background-color: #ede4b9;">
-              @foreach($cityList as $city)       
-              <li style="padding: 10px;">           
-                  <label for="city_default_{{ $city->id }}" style="cursor: pointer;">
-                    <input {{ $city_id_default == $city->id ? "checked" : "" }} type="radio" name="city_default" id="city_default_{{ $city->id }}" value="{{ $city->id }}"> {{ $city->name }}
-                  </label>
-              </li>
-              @endforeach
-                          
-            </ul>
-            </li>
+          </li> -->         
           <?php 
           $no_noti = $notiList->count();
           ?>

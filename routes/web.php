@@ -72,6 +72,36 @@ Route::group([
         Route::get('/tour', ['as' => 'hoa-hong-tour', 'uses' => 'BookingTourController@commission']);
     });
     Route::get('/hoa-hong-khach-san', 'BookingController@calCommissionHotel')->name('hoa-hong-khach-san');
+    Route::group(['prefix' => 'booking-seasport'], function () {        
+        Route::get('/', ['as' => 'booking-seasport.index', 'uses' => 'BookingSeasportController@index']);
+        Route::get('/fast-search', ['as' => 'booking-seasport.fast-search', 'uses' => 'BookingSeasportController@fastSearch']);
+        Route::get('/export', ['as' => 'booking-seasport.export', 'uses' => 'BookingSeasportController@export']);
+        Route::get('/not-export', ['as' => 'booking-seasport.not-export', 'uses' => 'BookingSeasportController@notExport']);
+        Route::get('/change-export-status', ['as' => 'change-export-status', 'uses' => 'BookingSeasportController@changeExport']);
+        Route::get('/change-status', ['as' => 'change-status', 'uses' => 'BookingSeasportController@changeStatus']);
+        Route::get('/change-value', ['as' => 'change-value-by-column', 'uses' => 'BookingSeasportController@changeValueByColumn']);
+        Route::get('/create', ['as' => 'booking-seasport.create', 'uses' => 'BookingSeasportController@create']);    
+        
+        Route::get('/get-info', ['as' => 'booking-seasport.info', 'uses' => 'BookingSeasportController@info']);
+        Route::get('/save-info', ['as' => 'booking-seasport.save-info', 'uses' => 'BookingSeasportController@saveInfo']);
+        Route::post('/store', ['as' => 'booking-seasport.store', 'uses' => 'BookingSeasportController@store']);
+        
+        Route::get('{id}/edit',   ['as' => 'booking-seasport.edit', 'uses' => 'BookingSeasportController@edit']);      
+       
+       
+        Route::get('{id}/history',   ['as' => 'history.booking', 'uses' => 'HistoryController@booking']);
+        Route::post('/update', ['as' => 'booking-seasport.update', 'uses' => 'BookingSeasportController@update']);
+        Route::get('{id}/destroy', ['as' => 'booking-seasport.destroy', 'uses' => 'BookingSeasportController@destroy']);  
+        
+        Route::get('/check-error', ['as' => 'booking-seasport.checkError', 'uses' => 'BookingSeasportController@checkError']);
+        Route::get('/check-unc', ['as' => 'booking-seasport.check-unc', 'uses' => 'BookingSeasportController@checkUnc']);
+        Route::get('/export-customer', ['as' => 'booking-seasport.export-customer', 'uses' => 'ExportController@customerTour']);
+        Route::get('/maps', ['as' => 'booking-seasport.maps', 'uses' => 'BookingSeasportController@maps']);
+
+        Route::get('/sms', ['as' => 'booking-seasport.sms', 'uses' => 'BookingSeasportController@sms']);
+        Route::post('/parse-sms', ['as' => 'booking-seasport.parse-sms', 'uses' => 'BookingSeasportController@parseSms']);
+        Route::get('/change-value', ['as' => 'booking-seasport.change-value-by-column', 'uses' => 'BookingSeasportController@changeValueByColumn']);
+    });
     Route::group(['prefix' => 'access'], function () {
         Route::get('/', ['as' => 'access.index', 'uses' => 'AccessController@index']);
         Route::get('/create', ['as' => 'access.create', 'uses' => 'AccessController@create']);
